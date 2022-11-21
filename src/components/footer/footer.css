@@ -1,0 +1,81 @@
+.footer{
+    width: 100vw;
+    height: 110px;
+    background-color: #0072BD;
+    position: absolute;
+    bottom: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h4{
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    color: white;
+    
+}
+
+.container .icons{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.container .icons .tiktok{
+    width: 100px;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .icons .instagram{
+    width: 100px;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .icons .facebook{
+    width: 100px;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container .icons .tiktok:hover{
+    transform: rotate(2deg) scale(1.2);
+}
+
+.container .icons .instagram:hover{
+    transform: rotate(2deg) scale(1.2);
+}
+
+.container .icons .facebook:hover{
+    transform: rotate(2deg) scale(1.2);
+}
+
+.container .icons p{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+

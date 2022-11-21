@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React, {useEffect} from 'react';
 import './App.css';
+import Header from './components/header/header';
+import Body from './components/body/body';
+import Footer from './components/footer/footer';
+
+
 
 function App() {
+
+const initialUrl = "https://pokeapi.co/api/v2/pokemon/";
+
+const fetchCharacters = (url) =>{
+  fetch(url)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log(error))
+}
+
+  useEffect(() => {
+    fetchCharacters(initialUrl);
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header></Header>
+      <Body></Body>
+      <Footer></Footer>
     </div>
   );
 }

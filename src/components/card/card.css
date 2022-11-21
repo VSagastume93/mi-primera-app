@@ -1,0 +1,28 @@
+.card{
+
+    width: 12rem;
+    height: 16rem;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.202);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    transform: rotate(2deg) scale(1.05);
+}
+
+.card .nombre{
+    color: #838383;
+    font-size: 20px;
+}
+
+.card .imagen-pokemon img{
+    width: 120px;
+}
+
