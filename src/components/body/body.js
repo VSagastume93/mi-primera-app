@@ -1,10 +1,16 @@
 import Card from "../card/card";
 import './body.css'
 
-function Body() {
+function Body({ characters }) {
+
+    console.log(characters)
+
     return (
         <div className="body">
-            <Card></Card>
+            {characters.map((element, index) => (
+                <Card pokemon = {element}></Card>
+            ))
+            }
         </div>
     )
 }

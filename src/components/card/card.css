@@ -1,5 +1,4 @@
 .card{
-
     width: 12rem;
     height: 16rem;
     background-color: #FFFFFF;
@@ -11,18 +10,19 @@
     align-items: center;
     gap: 30px;
     transition: all 0.5s ease;
+    margin: 30px;
 }
 
 .card:hover{
     transform: rotate(2deg) scale(1.05);
 }
 
-.card .nombre{
+.card span{
     color: #838383;
     font-size: 20px;
 }
 
-.card .imagen-pokemon img{
+.row .imagen-pokemon img{
     width: 120px;
 }
 

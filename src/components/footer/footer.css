@@ -2,7 +2,7 @@
     width: 100vw;
     height: 110px;
     background-color: #0072BD;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 

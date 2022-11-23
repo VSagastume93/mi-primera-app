@@ -1,14 +1,22 @@
 import './card.css'
+import React from 'react';
 
-function Card() {
+
+
+const Characters = ({pokemon}) => {
   return (
-    <div className="card">
-      <div className="imagen-pokemon">
-        <img src="img/Caterpie.svg" alt="" />
+
+      <div className="card">
+        <div className="image">
+
+        </div>
+        <span>{pokemon.name}</span>
       </div>
-      <div className="nombre">Nombre pókemon</div>
-    </div>
+
   );
 }
 
-export default Card;
+
+
+
+export default Characters;
